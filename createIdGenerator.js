@@ -15,3 +15,4 @@ const generateId = createIdGenerator();
 console.log(generateId()); // 1
 console.log(generateId()); // 2
 console.log(generateId()); // 3
+console.log(generateId()); // 4
