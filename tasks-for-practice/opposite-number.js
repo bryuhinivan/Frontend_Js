@@ -14,3 +14,9 @@ console.log(oppositeNum(-5));
 console.log(oppositeNum(0));
 console.log(oppositeNum(0.25));
 console.log(oppositeNum(-0.57));
+
+
+// Альтернативное решение
+/* function oppositeNum(number) {
+  return number !== 0 ? -number : 0
+} */ 
