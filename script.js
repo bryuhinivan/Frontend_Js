@@ -1,7 +1,13 @@
-let name = "Ilya";
+const user = {
+  name: 'Александр',
+  age: 28,
+  city: 'Москва',
+}
 
-alert( `hello ${1}` ); // ?
+const userKeys = Object.values(user);
 
-alert( `hello ${"name"}` ); // ?
+console.log('userKeys:', userKeys);
 
-alert( `hello ${name}` ); // ?
+userKeys.forEach((value) => {
+  console.log('Значение свойства:', value);
+})
