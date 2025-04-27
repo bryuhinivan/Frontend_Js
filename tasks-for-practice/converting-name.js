@@ -6,7 +6,7 @@
 Sam Harris => S.H
 patrick feeney => P.F */
 
-function convertNameInitials(str) {
+/* function convertNameInitials(str) {
   const nameSurName = str.split(" ");
   // console.log(nameSurName);
   const firstName = nameSurName[0][0];
@@ -17,4 +17,14 @@ function convertNameInitials(str) {
 }
 
 console.log(convertNameInitials("Sam Harris"));
-console.log(convertNameInitials("patricr feeney"));
+console.log(convertNameInitials("patricr feeney")); */
+
+function convertName (str) {
+  const splitStr = str.split(' ');
+  console.log(splitStr);
+  const firstItemsSplitStr = splitStr.map(item => item[0].toUpperCase());
+  console.log(firstItemsSplitStr);
+  return firstItemsSplitStr.join('.');
+}
+
+console.log(convertName('Sam Harris'));
