@@ -3,11 +3,20 @@
 Вам дан один параметр — исходная строка. 
 Вам не нужно беспокоиться о строках, содержащих менее двух символов. */
 
-function removeFirstAndLastItem (str) {
+/* function removeFirstAndLastItem (str) {
   const firstAndLastItem = str.slice(1, -1);
   
   return `Строка без первого и последнего символа: ${firstAndLastItem}`;
 }
 
 console.log(removeFirstAndLastItem("Привет!"));
-console.log(removeFirstAndLastItem("Доброе утро! И хорошего дня."));
+console.log(removeFirstAndLastItem("Доброе утро! И хорошего дня.")); */
+
+function deleteFirstAndLastItemStr(str) {
+  const splitStr = str.split('');
+  splitStr.shift();
+  splitStr.pop();
+  return splitStr.join('');
+}
+
+console.log(deleteFirstAndLastItemStr('Добрый день'));
