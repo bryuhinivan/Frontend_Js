@@ -11,7 +11,7 @@
 Удачного кодирования!
  */
 
-const number = 765;
+/* const number = 765;
 
 const strNumber = number.toString();
 console.log(strNumber);
@@ -31,4 +31,20 @@ console.log(typeof concatSquareArrayNumber);
 
 const result = +concatSquareArrayNumber;
 console.log(result);
+ */
 
+
+const number = 765;
+console.log(number);
+
+const arrStr = Array.from(String(number));
+console.log(arrStr);
+
+const arrNumber = arrStr.map(item => Number(item));
+console.log(arrNumber);
+
+const arrNumberXNumber = arrNumber.map(item => item * item);
+console.log(arrNumberXNumber);
+
+const result = Number(arrNumberXNumber.join(''));
+console.log(result);
