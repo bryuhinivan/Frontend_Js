@@ -8,11 +8,17 @@ const purchases = [
 ];
 
 
-function countProducts(arr){
-  const itemArr = purchases.map(item => item.price);
+/* function countProducts(arr){
+  const itemArr = arr.map(item => item.price);
   console.log(itemArr);
   const sum = itemArr.reduce((acc, num) => acc + num, 0);
   console.log(sum);
 }
 
-countProducts(purchases);
+countProducts(purchases); */
+
+function countProducts(arr) {
+  return arr.map(item => item.price).reduce((acc, num) => acc + num, 0)
+}
+
+console.log(countProducts(purchases));
