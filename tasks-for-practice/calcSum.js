@@ -17,8 +17,10 @@ const purchases = [
 
 countProducts(purchases); */
 
-function countProducts(arr) {
-  return arr.map(item => item.price).reduce((acc, num) => acc + num, 0)
+function purchasesSum(arr) {
+  const arrElements = arr.map(element => element.price);
+  const elementsSum = arrElements.reduce((acc, element) => acc + element, 0)
+  return elementsSum;
 }
 
-console.log(countProducts(purchases));
+console.log('Сумма всех покупок:', purchasesSum(purchases), 'руб.');
